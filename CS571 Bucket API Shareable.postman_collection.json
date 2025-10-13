@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "4acaf56d-2d2c-4cd9-9dae-fc0a4034eef5",
+		"name": "CS571 Bucket API Shareable",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9136549",
+		"_collection_link": "https://cs571-f25.postman.co/workspace/CS571-F25~137ca872-1838-4c3b-a247-5dbcf4390e4d/collection/9136549-4acaf56d-2d2c-4cd9-9dae-fc0a4034eef5?action=share&source=collection_link&creator=9136549"
+	},
+	"item": [
+		{
+			"name": "All Collections",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/f25/bucket/",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"f25",
+						"bucket",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Collection",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/f25/bucket/languages",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"f25",
+						"bucket",
+						"languages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add to Collection",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"language\": \"javascript\",\r\n    \"abbr\": \"js\",\r\n    \"isFun\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/f25/bucket/languages",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"f25",
+						"bucket",
+						"languages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Collection",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"language\": \"javascript\",\r\n    \"abbr\": \"js\",\r\n    \"isFun\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/f25/bucket/languages?id=8d8a7d16-61c8-4f15-aaa9-e36f8f3d2e56",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"f25",
+						"bucket",
+						"languages"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "8d8a7d16-61c8-4f15-aaa9-e36f8f3d2e56"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Collection",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-CS571-ID",
+						"value": "ENTER_YOUR_BID",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://cs571api.cs.wisc.edu/rest/f25/bucket/languages?id=5f6ac375-e204-4948-a66e-97c6e9cddcfc",
+					"protocol": "https",
+					"host": [
+						"cs571api",
+						"cs",
+						"wisc",
+						"edu"
+					],
+					"path": [
+						"rest",
+						"f25",
+						"bucket",
+						"languages"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5f6ac375-e204-4948-a66e-97c6e9cddcfc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
